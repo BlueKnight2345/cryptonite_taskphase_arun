@@ -24,3 +24,4 @@ used ls -a / to see all flies in root directory
 used nano on flag file to find flag
 
 ## An Epic Filesystem Quest
+used cat, cd and ls through multiple directories following hints provided till flag was found
