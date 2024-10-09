@@ -25,3 +25,12 @@ used nano on flag file to find flag
 
 ## An Epic Filesystem Quest
 used cat, cd and ls through multiple directories following hints provided till flag was found
+
+## making directories
+used mkdir to create a directory then touch to create a file within then ran /challenge/run to get flag
+
+## finding files
+used find / -name flag to find files named flag then used cat to identify which file contained flag
+
+## linking files
+used sym link to link files and ran challenge/catfile to read file and obtained flag
