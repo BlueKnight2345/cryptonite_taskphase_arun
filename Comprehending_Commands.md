@@ -20,3 +20,7 @@ created two files using touch to find flag
 deleted file using rm ~/delete_me and ran /challenge/check to find file
 
 ## hidden files
+used ls -a / to see all flies in root directory
+used nano on flag file to find flag
+
+## An Epic Filesystem Quest
