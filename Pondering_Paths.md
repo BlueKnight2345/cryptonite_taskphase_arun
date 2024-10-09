@@ -20,3 +20,7 @@ changed directory to root and used relative path challenge/run to get flag
 used '.' to refer to same directory to use ./challenge/run to find flag
 
 ## implicit relative path
+changed to directory to challenge and invoked ./run to find flag
+
+## home sweet home
+had to use a file within home directory, so used /challenge/run ~/f to use file f
