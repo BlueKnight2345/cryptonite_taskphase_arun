@@ -3,7 +3,7 @@
 have to chain two commands together to get flag
 executed commands: 
 
-`/challenge/pwn;/challenge/college
+`/challenge/pwn;/challenge/college`
 
 got flag: pwn.college{4ZgnZro24xWYbxfzyh1T1L09RCm.dVTN4QDL5EDM2czW}
 
@@ -20,7 +20,8 @@ then added commands to script file using
 `nano bash.sh`
 
 `/challenge/pwn`
-`challenge/college`
+
+`/challenge/college`
 
 then ran file using 
 
