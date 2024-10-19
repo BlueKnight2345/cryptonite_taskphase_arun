@@ -18,7 +18,7 @@ had to read a file named '-', found out this isn't straightforward as '-' is an 
 
 so used 
 
-'cat ./-'
+`cat ./-`
 
 and got password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 
