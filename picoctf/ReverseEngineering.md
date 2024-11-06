@@ -58,7 +58,7 @@ func:
 
 the code first creates a 32 byte stack then stores certain values within in
 
-68 at 16,2 at 20, 3 at 24, and a function argument w0 at 12
+68 at 16, 2 at 20, 3 at 24, 
 
 it then loads the value at 20 and 16 and performs a left bitwise shift on it
 
