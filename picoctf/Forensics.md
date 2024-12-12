@@ -49,6 +49,36 @@ What you learned through solving this challenge:
 1. using wire shark to analyze pcap files
 2. using steghide to perform steganography 
 
+# tunn3l v1s10n
+
+**Flag:** `picoCTF{qu1t3_a_v13w_2020}`
+
+Recieved a file which when i tried opening up on wsl spewed a large amount of data and couldn't be executed, so as a similar program was encountered on OASIS i decided to open it up using a hex editor
+
+On analyzing what i saw on the hex editor, I found it was a BMP file with some corrupted parts with the bytes removed on replaced with 'BAD'
+
+So i did some research on how the bytes in a bmp file are meant to look
+
+After looking into it, I found out the two 'BADs' were meant to be the file's pixel data offset and header size, standard hex values for both appeared to be 36 and 38, on modifying this i obtained an image
+
+![Screenshot 2024-12-13 002411](https://github.com/user-attachments/assets/14ab6794-834f-4c09-ac80-1b24939a620c)
+
+So, some more adjustments were needed
+
+I thought perhaps the image was cropped, so i could vary the image size parameters in the bitmap and try some things
+
+After some fiddling around with the values for the height of the bmp image and more research on what values could be accepted, i ended up with this 
+
+![Screenshot 2024-12-13 003013](https://github.com/user-attachments/assets/4ea89d1d-5731-4945-9ace-18dd757c17ea)
+
+
+1. using a hexeditor to analyze and modify the hexdump of files
+2. analyzing hexdump files
+
+
+
+
+
 
 
 
