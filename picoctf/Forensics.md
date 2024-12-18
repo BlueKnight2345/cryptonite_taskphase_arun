@@ -75,6 +75,28 @@ After some fiddling around with the values for the height of the bmp image and m
 1. using a hexeditor to analyze and modify the hexdump of files
 2. analyzing hexdump files
 
+# m00nwalk
+
+**Flag:** `picoCTF{beep_boop_im_in_space}`
+
+this challenge gave me a .wav audio file. i tried various things such as using an audio analyzer and a morse code decoder but these did not yield any results.
+
+I read the hints on the challenge which said 'How did pictures from the moon landing get sent back to Earth?'. After a bit of research, i found the answer to the hint was SSTV. i found out SSTV could be used to convert audio to images.
+
+So i went about finding an app to do this. i tried both RXSSTV as well as QSSSTV however I had trouble using both of these and turned to an android app called Robot36 to decode the audio and i got the flag.
+
+![Screenshot 2024-12-18 221320](https://github.com/user-attachments/assets/9120622d-9b0b-485f-889d-3a4be1486856)
+
+
+
+Things I learnt from this challenge: 
+
+1. usage of SSTV
+
+
+
+
+
 
 
 
