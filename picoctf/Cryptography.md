@@ -102,15 +102,15 @@ the first part was fairly simple, needing just some arithmetic:
 
 ![Screenshot 2024-12-19 144517](https://github.com/user-attachments/assets/e29db6c3-c25c-41e9-a5fa-fe25c45d9aed)
 
-based on my research on XOR ciphers, i knew they deciphering it wouldn't be hard as if A XOR B = C then A XOR C = B, so the same encryption script could be used to get the plaintext, i just had to feed it the cipher text.
+based on my research on XOR ciphers, i knew they deciphering it wouldn't be hard as if A XOR B = C then A XOR C = B, so the same encryption script could be used to get the plaintext, i just had to feed it the cipher text and make a slight modifciation to when the text is reversed.
 
-![Screenshot 2024-12-19 144807](https://github.com/user-attachments/assets/3857f91f-a696-43d4-ac5e-942ce316208a)
+![Screenshot 2024-12-19 145942](https://github.com/user-attachments/assets/f632ef15-1185-4255-8d8c-177ae4b9b7a8)
 
 Following these steps i constructed a program to decrypt the given ciphertext and obtained the flag
 
 The entire program:
 
-![Screenshot 2024-12-19 143928](https://github.com/user-attachments/assets/9662bee0-18c4-4139-b501-cfd58319969c)
+![Screenshot 2024-12-19 145949](https://github.com/user-attachments/assets/16c1c8ce-93e0-40f5-a0de-cab83992cf8b)
 
 Things I learnt from this challenge: 
 
