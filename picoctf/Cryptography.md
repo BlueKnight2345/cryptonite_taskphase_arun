@@ -83,6 +83,41 @@ What you learned through solving this challenge:
 1. reverse engineering python programs
 2. using python with bash
 
+# Custom encryption
+
+**Flag:** `picoCTF{custom_d2cr0pt6d_66778b34}`
+
+this challenge was definitely much more troublesome than the previous one. We were presented with an encryption script which used two levels of encryption, first an XOR based on a premutation of a known key in the script then conversion of the string to ascii values multiplied by some other values.
+
+The two levels of encryption:
+![Screenshot 2024-12-19 144122](https://github.com/user-attachments/assets/111825af-96f6-485c-bf72-1eb9379ebd01)
+
+
+unlike the previous challenge where i just modified the given script, i decided to start a new script from scratch utilizing the parts of the given script i already had
+
+first i copied the parts which would be needed, mainly the encrypted text, and some key values, then i proceeded to reverse the script.
+
+the first part was fairly simple, needing just some arithmetic:
+![Screenshot 2024-12-19 144517](https://github.com/user-attachments/assets/e29db6c3-c25c-41e9-a5fa-fe25c45d9aed)
+
+based on my research on XOR ciphers, i knew they deciphering it wouldn't be hard as if A XOR B = C then A XOR C = B, so the encryption script could be easily reversed to get the decryption script, i just had to feed it the encrypted text.
+
+![Screenshot 2024-12-19 144807](https://github.com/user-attachments/assets/3857f91f-a696-43d4-ac5e-942ce316208a)
+
+Following these steps i constructed a program to decrypt the given ciphertext and obtained the flag
+
+The entire program:
+![Screenshot 2024-12-19 143928](https://github.com/user-attachments/assets/9662bee0-18c4-4139-b501-cfd58319969c)
+
+Things I learnt from this challenge: 
+
+1. constructing programs to decrypt messages
+2. XOR cipher basics
+
+
+
+
+
 
 
 
