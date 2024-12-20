@@ -117,6 +117,65 @@ Things I learnt from this challenge:
 1. constructing programs to decrypt messages
 2. XOR cipher basics
 
+# miniRSA
+
+**Flag:** `picoCTF{n33d_a_lArg3r_e_d0cd6eae}`
+
+this challenge required the most research to finish. I learnt how the RSA encryption algorithm functions and it's vulnerabilities.
+
+I was given both the public key and the ciphertext and had to decrypt it to obtain the flag.
+
+I knew that the public key, N = P*Q where P and Q were two prime numbers, so i first attempted to use online tools such as factordb.com to find the values of P and Q but this did not work. 
+
+I read the hint given in the challenge 'How could having too small an e affect the security of this 2048 bit key?'. I did some more research and figured out what this hint was trying to convey. in RSA encryption:
+
+c = m^e mod n
+
+where:
+
+c = ciphertext
+m = plaintext
+(e,n) public key
+
+So the plaintext is raised to the power of e and it's modulus is taken with respect to n.
+
+But, if the value of m^e < n, then the modulus operator would return the value of m^e itself, the mod n would be circumvented.
+
+so:
+
+c = m^e mod n => c = m^e => m = c^(1/e)
+
+so I just needed to find the e'th root of c to get the plaintext.
+
+the only difficulty was python struggled to compute the root of such a large number, so i obtained a function to do this from stack overflow
+
+Using all this i obtained the integer value of plaintext m, which i converted to byte format using python functions from pycryptodome.
+
+The entire decryption program:
+
+![Screenshot 2024-12-20 142024](https://github.com/user-attachments/assets/bf923fcf-75b0-4bc5-9b65-12ccff861f16)
+
+
+Things I learnt from this challenge: 
+
+1. constructing programs to decrypt messages
+2. XOR cipher basics
+
+Other incorrect methods you tried:
+
+- trying to factorise the public key into primes
+
+References
+
+- https://stackoverflow.com/questions/356090/how-to-compute-the-nth-root-of-a-very-big-integer
+- https://www.youtube.com/watch?v=wcbH4t5SJpg
+- https://www.youtube.com/watch?v=_lg2AEqRTjg&t=206s
+
+
+
+
+
+
 
 
 
