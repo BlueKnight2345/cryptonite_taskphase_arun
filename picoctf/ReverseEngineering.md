@@ -74,6 +74,43 @@ What you learned through solving this challenge:
 
 1. Reading even more assembly code
 
+# vault-door-3
+
+**Flag:** `picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_1fb380}`
+
+this challenge presented me with some java code, which checked for the correct input for a password, this wasn't too challenging as the method for arriving at the password was present in the challenge itself.
+
+![Screenshot 2024-12-20 155405](https://github.com/user-attachments/assets/71ac81c9-246f-42d0-acc6-f2d5bc429c5a)
+
+this code indicated that the password would be the flag itself.
+
+the next part showed how the flag was made:
+
+![Screenshot 2024-12-20 155517](https://github.com/user-attachments/assets/65f1253d-75ca-4aad-acaf-cc876a128ba0)
+
+this clearly shows the flag is composed of parts of the string mentioned at the bottom of the code, as i wasn't full comfortable with java syntax, i recreated the parts in python to obtain the flag
+
+This is the python code i ended up with:
+
+![Screenshot 2024-12-20 155620](https://github.com/user-attachments/assets/ffc1ad73-4702-4221-bf16-9d491c3aac23)
+
+the code provided me with the string needed for the flag
+
+
+Things I learnt from this challenge: 
+
+1. reverse engineering string manipulation and indexing
+2. reading some java code
+
+Other incorrect methods you tried:
+
+- made error including "picoCTF{" when reconstructing flag in python code
+
+
+
+
+
+
 
 
 
