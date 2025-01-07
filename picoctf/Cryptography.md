@@ -177,7 +177,37 @@ References
 
 very straightforward vigener decoding with the keyword already given, used cyberchef to decode it
 
+# transposition-trial
 
+**Flag:** `picoCTF{7R4N5P051N6_15_3XP3N51V3_109AB02E}`
+
+This challenge involved a transposition cipher. After doing some reading i understood a transposition cipher involved changing the locations of characters without changing the characters themselves by reordering blocks of specific size of the plantext. Using the hint in the challenge i realised the blocks here were of size three, and as the first word of the plaintext was "the", i could easily figure how the blocks were changed
+
+the ciphertext:
+
+`heTfl g as iicpCTo{7F4NRP051N5_16_35P3X51N3_V091B0AE}2`
+
+as "the" = "het"
+
+the changes in location were:
+
+1 => 3
+2 => 1
+3 => 2
+
+so, i made a python script to decipher the ciphertext
+
+the python script i made:
+
+![Screenshot 2025-01-07 183301](https://github.com/user-attachments/assets/82e31b22-bbe3-412d-9c4f-a6c0d12bfdf0)
+
+the output:
+
+![Screenshot 2025-01-07 183305](https://github.com/user-attachments/assets/d4aea8ab-675d-444d-97bb-d27ccdd02857)
+
+Things I learnt from this challenge: 
+
+1. transposition ciphers
 
 
 
