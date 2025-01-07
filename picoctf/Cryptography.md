@@ -171,11 +171,27 @@ References
 - https://www.youtube.com/watch?v=wcbH4t5SJpg
 - https://www.youtube.com/watch?v=_lg2AEqRTjg&t=206s
 
-# Vigenere
+# basic-mod1
 
-**Flag:** `picoCTF{D0NT_US3_V1G3N3R3_C1PH3R_2951a89h}`
+**Flag:** `picoCTF{R0UND_N_R0UND_B6B25531}`
 
-very straightforward vigener decoding with the keyword already given, used cyberchef to decode it
+This challenge presented me with a txt file with a bunch of numbers, the challenge description indicated i had to find each number mod 37 and match to a given character set, being:
+
+" 0-25 is the alphabet (uppercase), 26-35 are the decimal digits, and 36 is an underscore."
+
+the ciphertext:
+
+`165 248 94 346 299 73 198 221 313 137 205 87 336 110 186 69 223 213 216 216 177 138 `
+
+so, i made a python program to for this purpose and decrypted the message
+
+the python script i made:
+
+![Screenshot 2025-01-07 212644](https://github.com/user-attachments/assets/7cb09ab3-15be-435a-a84f-20f7a9b1ee45)
+
+the output:
+
+![Screenshot 2025-01-07 212647](https://github.com/user-attachments/assets/3cd80e14-5c12-4e82-a584-5e7d7bd56ffb)
 
 # transposition-trial
 
@@ -210,6 +226,12 @@ the output:
 Things I learnt from this challenge: 
 
 1. transposition ciphers
+
+# Vigenere
+
+**Flag:** `picoCTF{D0NT_US3_V1G3N3R3_C1PH3R_2951a89h}`
+
+very straightforward vigener decoding with the keyword already given, used cyberchef to decode it
 
 
 
