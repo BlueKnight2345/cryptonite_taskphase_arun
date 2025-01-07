@@ -192,7 +192,9 @@ as "the" = "het"
 the changes in location were:
 
 1 => 3
+
 2 => 1
+
 3 => 2
 
 so, i made a python script to decipher the ciphertext
