@@ -231,7 +231,7 @@ Things I learnt from this challenge:
 
 **Flag:** `picoCTF{D0NT_US3_V1G3N3R3_C1PH3R_2951a89h}`
 
-very straightforward vigener decoding with the keyword already given, used cyberchef to decode it
+very straightforward vigenere decoding with the keyword already given, used cyberchef to decode it
 
 
 
