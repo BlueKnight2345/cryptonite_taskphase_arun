@@ -102,7 +102,7 @@ the first part was fairly simple, needing just some arithmetic:
 
 ![Screenshot 2024-12-19 144517](https://github.com/user-attachments/assets/e29db6c3-c25c-41e9-a5fa-fe25c45d9aed)
 
-based on my research on XOR ciphers, i knew they deciphering it wouldn't be hard as if A XOR B = C then A XOR C = B, so the same encryption script could be used to get the plaintext, i just had to feed it the cipher text and make a slight modifciation to when the text is reversed.
+based on my research on XOR ciphers, i knew they deciphering it wouldn't be hard as if A XOR B = C then C XOR B = A, so the same encryption script could be used to get the plaintext, i just had to feed it the cipher text and make a slight modifciation to when the text is reversed.
 
 ![Screenshot 2024-12-19 145942](https://github.com/user-attachments/assets/f632ef15-1185-4255-8d8c-177ae4b9b7a8)
 
