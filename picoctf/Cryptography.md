@@ -87,7 +87,7 @@ What you learned through solving this challenge:
 
 **Flag:** `picoCTF{custom_d2cr0pt6d_66778b34}`
 
-this challenge was definitely much more troublesome than the previous one. We were presented with an encryption script which used two levels of encryption, first an XOR based on a premutation of a known key in the script then conversion of the string to ascii values multiplied by some other values.
+this challenge definitely took more time than the previous one. We were presented with an encryption script which used two levels of encryption, first an XOR based on a premutation of a known key in the script then conversion of the string to ascii values multiplied by some other values.
 
 The two levels of encryption:
 
